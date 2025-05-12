@@ -1,43 +1,45 @@
 # Robot Vision
 
-This repository contains a series of Python-based Jupyter Notebooks focused on key concepts in Robot Vision and Image Processing.
+This repository contains a series of Python-based Jupyter Notebooks that explore fundamental and advanced topics in Robot Vision and Image Processing.
 
 ## 📁 Contents
-- **1. Image processing in python**: This colab notes provides an introduction to basic image processing techniques using the OpenCV computer vision library and some standard libraries in Python.
 
-- **3 image filtering**: 
- - Applied various filtering techniques to a personal image hosted online. 
- - Implemented and compared 3×3 and 5×5 box filters and multiple Gaussian filters of different sizes. 
- - Performed edge detection using Sobel and Canny algorithms with varying thresholds. 
- - Concluded with morphological operations and contour detection to automatically estimate and visualize the count of rice grains in an image.
+### **1. Image Processing in Python**
+Introduces basic image processing techniques using OpenCV and standard Python libraries in a Colab environment.
 
-- **5 ImageWarping**: 
- - Explored image transformations and homographies using matrix operations in homogeneous coordinates.
- - Performed rotation and translation on point sets to study transformation composition and matrix inversion.
- - Implemented forward warping of an image using a homography matrix and visualized warping artifacts.
- - Developed a nearest-neighbor interpolation technique to improve warped image quality.
- - Created reusable functions to apply homographies and recover transformation matrices from point correspondences.
- - Bonus work included building a generalized image warping function using forward and inverse mapping with bilinear interpolation.
+### **3_image_filtering.ipynb**
+- Applied 3×3 and 5×5 box filters to analyze the effects of kernel size.
+- Compared multiple Gaussian filters with varying kernel sizes.
+- Performed edge detection using Sobel and Canny algorithms.
+- Used morphological operations and contour detection to count rice grains in an image.
 
-- **Project 1**: 
- - Developed a Python-based document rectification tool inspired by apps like CamScanner.
- - Implemented manual image warping by allowing users to select document corners, computing the homography matrix, and applying backward warping to correct perspective distortion.
- - Tested the pipeline on high-resolution document images.
- - Also explored automated corner detection techniques for fully automated rectification, and evaluated performance on sample test images.
- - Emphasized robustness, accuracy, and potential improvements for better document localization.
+### **5_ImageWarping.ipynb**
+- Explored image transformation using homogeneous coordinate matrices.
+- Applied sequential rotation and translation to point sets.
+- Performed forward warping using a homography matrix.
+- Implemented nearest-neighbor interpolation to refine warped output.
+- Developed reusable functions to compute and apply homographies.
+- Bonus: Built a general image warping function with bilinear interpolation and both forward/inverse mapping.
 
-- **project2**: 
- - Built and trained multiple neural networks and convolutional neural networks (CNNs) for image classification tasks using the MNIST and CIFAR-10 datasets in PyTorch.
- - In Part 1, experimented with shallow and deep fully connected networks for digit recognition, modifying hyperparameters, adding activation functions (ReLU), and analyzing training/testing performance metrics.
- - In Part 2, implemented CNN architectures with varying filter depths and layers for classifying colored images in CIFAR-10.
- - Ran multiple experiments with different learning rates and epoch settings, visualized training curves, tested accuracy, and discussed performance trade-offs based on network size and training duration.
+### **Project_1.ipynb**
+- Built a Python tool for document rectification inspired by apps like CamScanner.
+- Enabled manual corner selection and computed homography-based transformation.
+- Applied backward warping to correct perspective distortion.
+- Explored automated document corner detection methods and evaluated performance.
+
+### **project2.ipynb**
+- Trained various neural networks for image classification using PyTorch.
+- **Part 1:** Designed and tested simple to deep fully connected networks for MNIST digit recognition.
+- **Part 2:** Built CNNs for CIFAR-10 classification with experiments on filter depth, learning rates, and training durations.
+- Visualized training/test loss curves and accuracy metrics, and discussed model behavior and efficiency.
 
 ## 🛠 Technologies Used
-- Python 3.x
-- OpenCV
-- NumPy
-- Jupyter Notebooks
+- Python 3.x  
+- OpenCV  
+- NumPy  
+- PyTorch  
+- Jupyter Notebooks  
 
 ## 📝 Notes
-Each notebook is self-contained and includes explanations, code examples, and visual outputs to reinforce robot vision concepts.
-# Robot-Vision
+Each notebook is self-contained and includes comments, code examples, training visualizations, and written analysis to support learning in robot vision and deep learning.
+
